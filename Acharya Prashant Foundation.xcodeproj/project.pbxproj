@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		17DF15282BD176C800874DD0 /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17DF15272BD176C800874DD0 /* ImageLoader.swift */; };
-		17DF152A2BD220A600874DD0 /* ImageDownloadHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17DF15292BD220A600874DD0 /* ImageDownloadHandler.swift */; };
+		17DF152A2BD220A600874DD0 /* ImageDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17DF15292BD220A600874DD0 /* ImageDownloader.swift */; };
 		17DF152C2BD2D48600874DD0 /* ProgressLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17DF152B2BD2D48600874DD0 /* ProgressLoader.swift */; };
 		17DF152E2BD3AE1400874DD0 /* ToastView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17DF152D2BD3AE1400874DD0 /* ToastView.swift */; };
 		17EFBB542BCE2DF600754617 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17EFBB532BCE2DF600754617 /* AppDelegate.swift */; };
@@ -32,12 +32,12 @@
 		17EFBB882BCE423B00754617 /* SquareColumnFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17EFBB872BCE423B00754617 /* SquareColumnFlowLayout.swift */; };
 		17EFBB8C2BCEE87A00754617 /* FullScreenImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17EFBB8B2BCEE87A00754617 /* FullScreenImageView.swift */; };
 		17EFBB8E2BCEEE3700754617 /* CoverageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17EFBB8D2BCEEE3700754617 /* CoverageViewController.swift */; };
-		17EFBB952BCEF99900754617 /* ImageCacheManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17EFBB942BCEF99900754617 /* ImageCacheManager.swift */; };
+		17EFBB952BCEF99900754617 /* ImageCacheHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17EFBB942BCEF99900754617 /* ImageCacheHelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		17DF15272BD176C800874DD0 /* ImageLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoader.swift; sourceTree = "<group>"; };
-		17DF15292BD220A600874DD0 /* ImageDownloadHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDownloadHandler.swift; sourceTree = "<group>"; };
+		17DF15292BD220A600874DD0 /* ImageDownloader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDownloader.swift; sourceTree = "<group>"; };
 		17DF152B2BD2D48600874DD0 /* ProgressLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressLoader.swift; sourceTree = "<group>"; };
 		17DF152D2BD3AE1400874DD0 /* ToastView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToastView.swift; sourceTree = "<group>"; };
 		17EFBB502BCE2DF600754617 /* Acharya Prashant Foundation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Acharya Prashant Foundation.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -63,7 +63,7 @@
 		17EFBB872BCE423B00754617 /* SquareColumnFlowLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SquareColumnFlowLayout.swift; sourceTree = "<group>"; };
 		17EFBB8B2BCEE87A00754617 /* FullScreenImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullScreenImageView.swift; sourceTree = "<group>"; };
 		17EFBB8D2BCEEE3700754617 /* CoverageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoverageViewController.swift; sourceTree = "<group>"; };
-		17EFBB942BCEF99900754617 /* ImageCacheManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCacheManager.swift; sourceTree = "<group>"; };
+		17EFBB942BCEF99900754617 /* ImageCacheHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCacheHelper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -185,8 +185,8 @@
 			isa = PBXGroup;
 			children = (
 				17DF15272BD176C800874DD0 /* ImageLoader.swift */,
-				17EFBB942BCEF99900754617 /* ImageCacheManager.swift */,
-				17DF15292BD220A600874DD0 /* ImageDownloadHandler.swift */,
+				17EFBB942BCEF99900754617 /* ImageCacheHelper.swift */,
+				17DF15292BD220A600874DD0 /* ImageDownloader.swift */,
 			);
 			path = MediaManager;
 			sourceTree = "<group>";
@@ -277,10 +277,10 @@
 				17EFBB6F2BCE315100754617 /* ApiManager.swift in Sources */,
 				17EFBB842BCE404700754617 /* FeedImageCell.swift in Sources */,
 				17EFBB882BCE423B00754617 /* SquareColumnFlowLayout.swift in Sources */,
-				17DF152A2BD220A600874DD0 /* ImageDownloadHandler.swift in Sources */,
+				17DF152A2BD220A600874DD0 /* ImageDownloader.swift in Sources */,
 				17EFBB832BCE404700754617 /* DashboardViewController.swift in Sources */,
 				17EFBB822BCE404700754617 /* DashboardEndPoint.swift in Sources */,
-				17EFBB952BCEF99900754617 /* ImageCacheManager.swift in Sources */,
+				17EFBB952BCEF99900754617 /* ImageCacheHelper.swift in Sources */,
 				17EFBB732BCE315100754617 /* NetworkReachability.swift in Sources */,
 				17EFBB6E2BCE315100754617 /* ResponseHandlerURLSession.swift in Sources */,
 				17EFBB562BCE2DF600754617 /* SceneDelegate.swift in Sources */,
