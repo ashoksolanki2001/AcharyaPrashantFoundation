@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "AFB0BF8D-9A46-4656-99D6-BD46046A1F60"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "9F0F96EB-AF49-4E5E-AF61-A756DEB1E17D"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Acharya Prashant Foundation/MediaManager/ImageDownloadHandler.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "87"
+            endingLineNumber = "87"
+            landmarkName = "resetAllPriority()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "9F0F96EB-AF49-4E5E-AF61-A756DEB1E17D - bfc8fc2e98dc9b41"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Acharya_Prashant_Foundation.ImageDownloader.resetAllPriority() -&gt; ()"
+                  moduleName = "Acharya Prashant Foundation"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Volumes/HD2/iOS_topic_learn_final_noCopy_other_23_apr_2023/Interview_Assignment/Code/Acharya%20Prashant%20Foundation/MediaManager/ImageDownloadHandler.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "90"
+                  endingLineNumber = "90"
+                  offsetFromSymbolStart = "296">
+               </Location>
+               <Location
+                  uuid = "9F0F96EB-AF49-4E5E-AF61-A756DEB1E17D - bfc8fc2e98dc9b41"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Acharya_Prashant_Foundation.ImageDownloader.resetAllPriority() -&gt; ()"
+                  moduleName = "Acharya Prashant Foundation"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Volumes/HD2/iOS_topic_learn_final_noCopy_other_23_apr_2023/Interview_Assignment/Code/Acharya%20Prashant%20Foundation/MediaManager/ImageDownloadHandler.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "90"
+                  endingLineNumber = "90"
+                  offsetFromSymbolStart = "536">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "315B2421-6B32-4BE7-8D56-A7B37564EF46"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Acharya Prashant Foundation/MediaManager/ImageDownloadHandler.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "28"
+            endingLineNumber = "28"
+            landmarkName = "downloadImage(withURL:setPriority:completionHandler:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
