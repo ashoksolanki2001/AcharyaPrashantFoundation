@@ -33,9 +33,12 @@ class DashboardViewController: UICollectionViewController {
 }
 
 extension DashboardViewController {
-    override func scrollViewWillBeginDragging(_ scrollView: UIScrollView) {
+    
+    override func scrollViewDidEndDragging(_ scrollView: UIScrollView, willDecelerate decelerate: Bool) {
         
-        self.imageLoader.imageDownloader.resetAllPriority()
+        if let collectionView = scrollView as? UICollectionView {
+            self.imageLoader.resetDownloadingForVisibleCell(collectionView)
+        }
     }
     
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {

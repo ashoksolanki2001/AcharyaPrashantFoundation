@@ -51,6 +51,8 @@ class ImageLoader {
                 self.memoryCache.setObject(image, forKey: url.absoluteString as NSString)
                 // Store image in disk cache
                 self.diskCacheHelper.saveImageToDiskCache(image, forURL: url)
+//                print("Download From server:")
+//                print("url: \(url.absoluteString)")
                 completion(.success(image))
             } else if let error {
                 
@@ -80,6 +82,7 @@ extension ImageLoader {
             // Check if the cell is still visible
             switch result {
             case .success(let image):
+                print("Download done at index: \(indexPath.row)")
                 if collectionView.indexPathsForVisibleItems.contains(indexPath) {
                     if let cellToUpdate = collectionView.cellForItem(at: indexPath) as? FeedImageCell {
                         cellToUpdate.feedImgView.image = image
@@ -134,6 +137,19 @@ extension ImageLoader {
             if let imageUrl = getImageUrl(at: indexPath) {
                 
                 setImageToCell(imageUrl, collectionView, indexPath, setPriority: .prefetching)
+            }
+        }
+    }
+    
+    func resetDownloadingForVisibleCell(_ collectionView: UICollectionView) {
+        self.imageDownloader.resetAllPriority()
+        
+        let visibleIndexPaths = collectionView.indexPathsForVisibleItems
+        for indexPath in visibleIndexPaths {
+            
+            if let imageUrl = getImageUrl(at: indexPath) {
+                setImageToCell(imageUrl, collectionView, indexPath, setPriority: .prefetching)
+                
             }
         }
     }

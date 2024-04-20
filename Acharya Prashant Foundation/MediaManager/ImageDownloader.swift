@@ -8,9 +8,8 @@
 import UIKit
 
 enum DownloadPriority: Float {
-    
     case high = 0
-    case prefetching = 1
+    case prefetching = 2
 }
 
 class ImageDownloader {
@@ -26,6 +25,7 @@ class ImageDownloader {
     
     func downloadImage(withURL url: URL, setPriority priority: DownloadPriority = .prefetching, completionHandler: @escaping (UIImage?, Error?) -> Void) {
         if let task = downloadTasks[url] {
+//            print("url: \(url.absoluteString)")
 //            if task.priority != priority.rawValue {
 //                print("priority change from: \(task.priority) to \(priority.rawValue)")
 //            } else {
@@ -41,7 +41,9 @@ class ImageDownloader {
         
         let task = session.dataTask(with: request) { data, response, error in
             defer {
-                self.downloadTasks.removeValue(forKey: url)
+                DispatchQueue.main.async {
+                    self.downloadTasks.removeValue(forKey: url)
+                }
             }
 
             guard let data = data, let image = UIImage(data: data) else {
